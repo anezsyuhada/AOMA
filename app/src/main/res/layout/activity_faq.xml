@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back4"
+    tools:context=".FaqActivity">
+
+    <TextView
+        android:id="@+id/titleHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:shadowColor="#A08243"
+        android:shadowDx="6"
+        android:shadowDy="6"
+        android:shadowRadius="4"
+        android:text="Akmar Orthodontics"
+        android:textColor="#FF052545"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <!-- FAQ item 2 -->
+
+    <!-- FAQ item 3 -->
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:text="FAQs"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleHome"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <LinearLayout
+        android:id="@+id/faqItem1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle">
+
+        <TextView
+            android:id="@+id/textViewQuestion1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How do I order a medicine for pick-up?"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewAnswer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\nStep 1: Login to your account.\nStep 2: Press the 'Medicine' button in the card view.\nStep 3: Choose your desired medications and add them to the cart.\nStep 4: Go to the cart, choose the pickup date, and press the 'Checkout' button.\nStep 5: Fill in all the details asked and press the 'Order' button."
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/faqItem2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faqItem1">
+
+        <TextView
+            android:id="@+id/textViewQuestion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How do I book an appointment?"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewAnswer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\nStep 1: Login to your account.\nStep 2: Press the 'Appointment' button in the card view.\nStep 3: Choose the type of appointment (e.g., Braces, Wisdom Tooth, etc.).\nStep 4: A more detailed view of the appointment will be displayed.\nStep 5: Choose the date and time of the appointment and press 'Book'."
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- FAQ item 4 -->
+    <LinearLayout
+        android:id="@+id/faqItem3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faqItem2">
+
+        <TextView
+            android:id="@+id/textViewQuestion3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How do I cancel my booking and ordered medicine?"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewAnswer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\nPress 'Order Details' and click on the booked appointment/ordered medications to cancel your activity."
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/faqItem4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faqItem3">
+
+        <TextView
+            android:id="@+id/textViewQuestion4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How do I contact the clinic?"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewAnswer4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\nYou can press the 'Profile' card, and a 'Contact Us' button will be shown. There, you will find the clinic's phone number and address."
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonBackFAQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:backgroundTint="#052545"
+        android:text="BACK"
+        android:textColor="#DCC998"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faqItem4"
+        app:layout_constraintVertical_bias="0.92" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
